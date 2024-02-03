@@ -6,13 +6,13 @@ This aim of this lab is to understand the working of `redux`. As we know that, t
 
 1. Actions - plain JavaScript object that contains information.
 2. Reducers - pure functions that contain the logic and calculation that needed to be performed on the state.
-3. Store - an object which provides the state of the application. 
+3. Store - an object which provides the state of the application.
 
 Through this lab, we will try to apply all the above concepts, in order to build a very simple application.
 
 **NOTE:** You may not find a great use of using redux, for this simple application, but for complex applications --> where the application is build with many components and these components share some states, in such cases redux becomes really powerful. But in order to understand and practice redux, we will go with a simple example.
 
-***use the following command in order to install redux: `npm install redux`***
+**_use the following command in order to install redux: `npm install redux`_**
 
 ### Problem Statement:
 
@@ -24,23 +24,25 @@ If someone clicks on the like button, the `like counter` should increment by one
 ### Progression 1:
 
 1. create a new project and name it as -> `redux-like-counter`
-2. Create three files: 
-    1. `Actions.jsx` -> which will contain all your actions.
-    2. `Reducer.jsx` -> which will contain all your reducers.
-    3. `LikeCounter.jsx` -> which will contain the store. You have to write the `jsx` for the application in this component. ( your `app.jsx` should render `LikeCounter` only.)
+2. Create three files:
+   1. `Actions.jsx` -> which will contain all your actions.
+   2. `Reducer.jsx` -> which will contain all your reducers.
+   3. `LikeCounter.jsx` -> which will contain the store. You have to write the `jsx` for the application in this component. ( your `app.jsx` should render `LikeCounter` only.)
 
 ### Progression 2:
 
 Inside `Actions.jsx` -> create two functions -:
+
 1. incrementLike() -> this function should return an object which contains the `INCREMENT` as the type of action.
 2. decrementLike() -> this function should return an object which contains the `DECREMENT` as the type of action.
 
 ### Progression 3:
 
 Inside `Reducer.jsx` : create one function as `reducer`, which takes two arguments:
+
 1. state
 2. action
-Based on the type of action (in our case there are only two types of actions ->`INCREMENT` and `DECREMENT` ), write the logic for that particular action.
+   Based on the type of action (in our case there are only two types of actions ->`INCREMENT` and `DECREMENT` ), write the logic for that particular action.
 
 ### Progression 4:
 
@@ -48,10 +50,4 @@ Inside `LikeCounter.jsx` -> create a store, and pass `reducer` (the same reducer
 
 Use `dispatch` to dispatch the action to the store.
 
-
 Happy Coding ❤️!
-
-
-
-
-
